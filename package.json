@@ -1,0 +1,102 @@
+{
+  "name": "sudoku",
+  "version": "1.0.0",
+  "description": "",
+  "mainDir": "src",
+  "scripts": {
+    "test": "jest --no-cache",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "clean": "rm -rf ./dist/*",
+    "build-sw": "node ./inject-sw.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@types/jest": "^28.1.2",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-loadable": "^5.5.6",
+    "@types/react-redux": "^7.1.24",
+    "@types/styled-components": "^5.1.25",
+    "@types/workbox-sw": "^4.3.2",
+    "babel-jest": "^28.1.1",
+    "comlink": "^4.3.1",
+    "jest": "^28.1.1",
+    "localforage": "^1.10.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "reselect": "^4.1.6",
+    "styled-components": "^5.3.5",
+    "workbox-build": "^6.5.3",
+    "workbox-cli": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-sw": "^6.5.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@parcel/packager-raw-url": "^2.6.1",
+    "@parcel/transformer-webmanifest": "^2.6.1",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "0.0.13",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
+    "parcel": "^2.6.1",
+    "typescript": "^4.7.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-runtime"
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "babel-plugin-styled-components",
+        {
+          "displayName": true,
+          "minify": false,
+          "transpileTemplateLiterals": false
+        }
+      ]
+    ]
+  },
+  "alias": {
+    "components": "./src/components",
+    "entries": "./src/entries",
+    "model": "./src/model",
+    "state": "./src/state",
+    "containers": "./src/containers",
+    "lib": "./src/lib"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}

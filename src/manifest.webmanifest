@@ -1,0 +1,22 @@
+{
+  "short_name": "Sudoku",
+  "name": "Sudoku - Challenge your brain",
+  "description": "Lightweight minimalistic simple sudoku game, that works offline and on any OS",
+  "icons": [
+    {
+      "src": "./images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#efefef"
+}
