@@ -36,8 +36,16 @@ You can find some code examples inside.
 
 ## Main commands
 
+To start local development.
+`npm run dev`
+
+To launch tests.
+`npm test`
+
 To build main code.
 `npm run build`
 
 To build service worker. Run it only after previous command.
 `npm run build-sw`
+
+Now you can put files from `dist` folder on your favorite storage.

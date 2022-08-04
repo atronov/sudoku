@@ -11,8 +11,6 @@ const TipsContainer = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
-    outline: 1px solid red;
 `;
 
 const TipsRow = styled.div`
